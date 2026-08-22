@@ -4,6 +4,9 @@
   "description": "In-editor dependency management for package.json: highlights outdated packages, lets you queue upgrades with a code lens, and runs npm install from the editor.",
   "version": "0.1.0",
   "publisher": "mattgoespro",
+  "repository": {
+    "url": "https://github.com/mattgoespro/npm-vc-vscode-extension"
+  },
   "engines": {
     "vscode": "^1.134.0"
   },

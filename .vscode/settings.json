@@ -74,6 +74,7 @@
   "js/ts.preferences.importModuleSpecifier": "shortest",
   "js/ts.tsdk.path": "node_modules\\typescript\\lib",
   "js/ts.updateImportsOnFileMove.enabled": "always",
+  "json.schemaDownload.enable": true,
   "search.exclude": {
     "*-lock.json": true,
     "*-lock.yaml": true,
