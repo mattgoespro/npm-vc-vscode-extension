@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "github.copilot-chat",
+    "usernamehw.errorlens",
+    "esbenp.prettier-vscode",
+    "felipecaputo.git-project-manager",
+    "richie5um2.vscode-sort-json",
+    "christian-kohler.npm-intellisense",
+    "herrmannplatz.npm-dependency-links",
+    "meganrogge.template-string-converter",
+    "fabiospampinato.vscode-open-in-npm",
+    "dbaeumer.vscode-eslint",
+    "mskelton.npm-outdated",
+    "yoavbls.pretty-ts-errors",
+    "ms-vscode.powershell",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "debug.toolBarLocation": "commandCenter",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.fixAll.ts": "always",
+    "source.organizeImports": "always",
+    "source.removeUnusedImports": "never"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.foldingMaximumRegions": 65000,
+  "editor.fontFamily": "Google Sans Code Monospaced, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 11,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineHeight": 1.5,
+  "editor.linkedEditing": true,
+  "editor.maxTokenizationLineLength": 200000,
+  "editor.minimap.maxColumn": 150,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.scale": 1,
+  "editor.minimap.showSlider": "mouseover",
+  "eslint.enable": true,
+  "eslint.format.enable": false,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/node_modules/**": true,
+    ".git": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreMissingGitWarning": true,
+  "gitProjectManager.baseProjectsFolders": [
+    "%USERPROFILE%\\Desktop\\Clueless\\Code"
+  ],
+  "gitProjectManager.ignoredFolders": ["node_modules", ".vscode", ".git"],
+  "gitProjectManager.maxDepthRecursion": 1,
+  "gitProjectManager.openInNewWindow": true,
+  "js/ts.preferences.importModuleSpecifier": "shortest",
+  "js/ts.tsdk.path": "node_modules\\typescript\\lib",
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "*-lock.json": true,
+    "*-lock.yaml": true,
+    ".vscode": true,
+    "dist": true
+  },
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.profiles.windows": {
+    "bash-node": {
+      "color": "terminal.ansiGreen",
+      "env": {
+        "PATH": "${env:PATH};${workspaceFolder}\\node_modules\\.bin"
+      },
+      "icon": "terminal-bash",
+      "overrideName": true,
+      "path": "${env:LOCALAPPDATA}\\Programs\\Git\\bin\\bash.exe"
+    }
+  },
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.useModal": "off",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.tree.indent": 10
+}

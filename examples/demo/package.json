@@ -1,0 +1,16 @@
+{
+  "name": "nvc-demo",
+  "version": "1.0.0",
+  "description": "Open this file in the Extension Development Host to try npm Version Control.",
+  "private": true,
+  "dependencies": {
+    "left-pad": "^1.0.0",
+    "semver": "~7.0.0",
+    "lodash": "4.17.0",
+    "some-local-pkg": "file:../local"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0"
+  }
+}

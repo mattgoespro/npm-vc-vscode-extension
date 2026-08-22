@@ -1,0 +1,93 @@
+{
+  "name": "npm-vc-extension",
+  "displayName": "npm Version Control",
+  "description": "In-editor dependency management for package.json: highlights outdated packages, lets you queue upgrades with a code lens, and runs npm install from the editor.",
+  "version": "0.1.0",
+  "publisher": "mattgoespro",
+  "engines": {
+    "vscode": "^1.134.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:json",
+    "onLanguage:jsonc"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "npmVersionControl.toggleMark",
+        "title": "npm Version Control: Toggle upgrade mark on package"
+      },
+      {
+        "command": "npmVersionControl.install",
+        "title": "npm Version Control: Install (and apply queued upgrades)"
+      },
+      {
+        "command": "npmVersionControl.refresh",
+        "title": "npm Version Control: Refresh outdated info"
+      },
+      {
+        "command": "npmVersionControl.showOutput",
+        "title": "npm Version Control: Show output panel"
+      }
+    ],
+    "configuration": {
+      "title": "npm Version Control",
+      "properties": {
+        "npmVersionControl.registry": {
+          "type": "string",
+          "default": "https://registry.npmjs.org",
+          "description": "npm registry base URL used for version lookups."
+        },
+        "npmVersionControl.cacheTtlSeconds": {
+          "type": "number",
+          "default": 300,
+          "description": "How long to cache registry lookups, in seconds."
+        },
+        "npmVersionControl.npmLogLevel": {
+          "type": "string",
+          "enum": [
+            "silent",
+            "error",
+            "warn",
+            "notice",
+            "http",
+            "info",
+            "verbose",
+            "silly"
+          ],
+          "default": "http",
+          "description": "npm --loglevel value used when running install from the extension. `http` and above stream registry activity to the output panel so you can see progress while npm resolves the dependency tree."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "watch": "tsc -watch -p ./",
+    "compile": "tsc -p ./",
+    "vscode:package": "vsce package",
+    "vscode:prepackage": "npm run compile",
+    "vscode:publish": "vsce publish",
+    "vscode:prepublish": "npm run compile"
+  },
+  "dependencies": {
+    "jsonc-parser": "^3.3.1",
+    "semver": "^7.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/semver": "^7.8.0",
+    "@types/vscode": "^1.134.0",
+    "@vscode/vsce": "^3.9.2",
+    "eslint": "^10.8.1",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "@vscode/vsce-sign@2.0.9": true,
+    "keytar@7.9.0": true
+  }
+}
