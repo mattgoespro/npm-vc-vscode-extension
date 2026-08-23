@@ -16,7 +16,7 @@
     "color": "#1e1e1e",
     "theme": "dark"
   },
-  "icon": "resources/icon.png",
+  "icon": "icon.png",
   "main": "./dist/extension.js",
   "scripts": {
     "watch": "tsc -watch -p ./",
@@ -24,7 +24,7 @@
     "vscode:package": "vsce package",
     "vscode:prepackage": "npm run compile",
     "vscode:publish": "vsce publish",
-    "vscode:prepublish": "npm run compile"
+    "vscode:prepublish": "npm run compile && cp ./icon.png dist/icon.png"
   },
   "dependencies": {
     "jsonc-parser": "^3.3.1",
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@types/node": "^26.2.0",
     "@types/semver": "^7.8.0",
-    "@types/vscode": "^1.134.0",
+    "@types/vscode": "^1.128.0",
     "@vscode/vsce": "^3.9.2",
     "eslint": "^10.8.1",
     "prettier": "^3.9.6",
