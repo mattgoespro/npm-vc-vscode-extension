@@ -23,15 +23,6 @@ When you open a `package.json` file, the extension:
    `conflicting peer dependency`), an error diagnostic is placed on the
    category's key line so the failure is anchored right next to what caused it.
 
-## Build
-
-```sh
-npm install
-npm run compile
-```
-
-Then press <kbd>F5</kbd> in VS Code to launch an Extension Development Host.
-
 ## Settings
 
 - `npmVersionControl.registry` — override the npm registry base URL.

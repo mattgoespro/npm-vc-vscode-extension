@@ -86,7 +86,7 @@
     "bash-node": {
       "color": "terminal.ansiGreen",
       "env": {
-        "PATH": "${env:PATH};${workspaceFolder}\\node_modules\\.bin"
+        "PATH": "${workspaceFolder}\\node_modules\\.bin;${env:PATH}"
       },
       "icon": "terminal-bash",
       "overrideName": true,
@@ -96,7 +96,6 @@
   "workbench.activityBar.orientation": "vertical",
   "workbench.colorTheme": "Default Dark Modern",
   "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.useModal": "off",
   "workbench.iconTheme": "vscode-icons",
   "workbench.tree.indent": 10
 }

@@ -1,7 +1,8 @@
-.vscode/**
+# Source files
 .vscode-test/**
+.vscode/**
 src/**
+resources/**
+examples/**
 .gitignore
 tsconfig.json
-**/*.map
-**/*.ts

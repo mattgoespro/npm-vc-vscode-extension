@@ -1,23 +1,48 @@
 {
-  "name": "npm-vc-extension",
+  "name": "npm-vc-vscode-extension",
   "displayName": "npm Version Control",
   "description": "In-editor dependency management for package.json: highlights outdated packages, lets you queue upgrades with a code lens, and runs npm install from the editor.",
-  "version": "0.1.0",
+  "author": "mattgoespro",
   "publisher": "mattgoespro",
   "repository": {
     "url": "https://github.com/mattgoespro/npm-vc-vscode-extension"
   },
-  "engines": {
-    "vscode": "^1.134.0"
-  },
+  "version": "0.0.1",
+  "license": "MIT",
   "categories": [
     "Other"
   ],
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+  "icon": "resources/icon.png",
+  "main": "./dist/extension.js",
+  "scripts": {
+    "watch": "tsc -watch -p ./",
+    "compile": "tsc -p ./",
+    "vscode:package": "vsce package",
+    "vscode:prepackage": "npm run compile",
+    "vscode:publish": "vsce publish",
+    "vscode:prepublish": "npm run compile"
+  },
+  "dependencies": {
+    "jsonc-parser": "^3.3.1",
+    "semver": "^7.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/semver": "^7.8.0",
+    "@types/vscode": "^1.134.0",
+    "@vscode/vsce": "^3.9.2",
+    "eslint": "^10.8.1",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2"
+  },
   "activationEvents": [
     "onLanguage:json",
     "onLanguage:jsonc"
   ],
-  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
@@ -68,29 +93,11 @@
       }
     }
   },
-  "scripts": {
-    "watch": "tsc -watch -p ./",
-    "compile": "tsc -p ./",
-    "vscode:package": "vsce package",
-    "vscode:prepackage": "npm run compile",
-    "vscode:publish": "vsce publish",
-    "vscode:prepublish": "npm run compile"
-  },
-  "dependencies": {
-    "jsonc-parser": "^3.3.1",
-    "semver": "^7.8.5"
-  },
-  "devDependencies": {
-    "@types/node": "^26.2.0",
-    "@types/semver": "^7.8.0",
-    "@types/vscode": "^1.134.0",
-    "@vscode/vsce": "^3.9.2",
-    "eslint": "^10.8.1",
-    "prettier": "^3.9.6",
-    "typescript": "^7.0.2"
-  },
   "allowScripts": {
     "@vscode/vsce-sign@2.0.9": true,
     "keytar@7.9.0": true
+  },
+  "engines": {
+    "vscode": ">=1.128.0"
   }
 }
