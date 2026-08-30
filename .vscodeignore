@@ -1,6 +1,6 @@
 # Source files
-.vscode-test/**
 .vscode/**
+.vscode-test/**
 src/**
 resources/**
 examples/**

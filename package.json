@@ -7,7 +7,7 @@
   "repository": {
     "url": "https://github.com/mattgoespro/npm-vc-vscode-extension"
   },
-  "version": "0.0.1",
+  "version": "0.1.2",
   "license": "MIT",
   "categories": [
     "Other"
@@ -16,6 +16,27 @@
     "color": "#1e1e1e",
     "theme": "dark"
   },
+  "keywords": [
+    "npm",
+    "npm install",
+    "npm update",
+    "npm upgrade",
+    "npm outdated",
+    "version control",
+    "vc",
+    "source control",
+    "deps",
+    "dependency",
+    "dependencies",
+    "devDependencies",
+    "peerDependencies",
+    "optionalDependencies",
+    "bundledDependencies",
+    "resolutions",
+    "management",
+    "code lens",
+    "outdated packages"
+  ],
   "icon": "icon.png",
   "main": "./dist/extension.js",
   "scripts": {
@@ -33,7 +54,7 @@
   "devDependencies": {
     "@types/node": "^26.2.0",
     "@types/semver": "^7.8.0",
-    "@types/vscode": "^1.128.0",
+    "@types/vscode": "1.125.0",
     "@vscode/vsce": "^3.9.2",
     "eslint": "^10.8.1",
     "prettier": "^3.9.6",
@@ -98,6 +119,6 @@
     "keytar@7.9.0": true
   },
   "engines": {
-    "vscode": ">=1.128.0"
+    "vscode": "^1.125.0"
   }
 }
